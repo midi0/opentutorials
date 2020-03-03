@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <style>
+      /*CSS에선 주석을 이렇게 쓴다
+      h1처럼 전체를 크기로 가지는 태그는
+      block level element 라고 한다.*/
+      h1,a{
+        /* 이 속성은
+        border-width: 5px;
+        border-color: red;
+        border-style: solid;
+        아래의 한 줄로 퉁칠 수 있다 */
+
+        border:5px solid red;
+        padding: 20px;
+        margin:20px;
+        width: 100px;
+        /*display:inline 를 쓰면 inline element처럼 자기 부피만큼만 가진다.*/
+      }
+      /*a와 같이 자신의 부피, 컨텐츠 크기만큼을 갖는 태그는
+      inline element 라고 부른다.*/
+      a{
+        display: block;
+        /*display:block 를 쓰면 block level element처럼 전체를 부피로 가진다.*/
+      }
+    </style>
+    </head>
+  <body>
+    <h1>CSS</h1>
+    <h1>CSS</h1>
+    <img src="CSSBoxModel.PNG" width="50%">
+    <a>a 태그</a>는 줄바꿈이 되지 않고 다른 컨텐츠와 같은 라인에 위치
+    h1 태그는 자동 줄바꿈이 된다
+    이유는 제목 태그는 화면 전체를 쓰는게 기본적으로 더 편리,
+    링크가 화면 전체를 쓴다면 링크 전후의 컨텐츠가 줄바꿈이 된다면 불편하기에
+    기본적으로 링크는 줄바꿈을 하지 않는다.
+    /**/ 안에 주석을 달 수 있다.
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+  <title>WEB - CSS</title>
+  <meta charset="utf-8">
+  <!--HTML의 문법이며 동시에 CSS의 문법
+   스타일 태그 안쪽의 내용은 CSS의 문법으로 해석해서 처리하게 명령-->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <h1><a href="index.html">WEB</a></h1>
+ <div id="grid">
+   <ol>
+     <li><a href="1.html">HTML</a></li>
+     <li><a href="2.html">CSS</a></li>
+     <li><a href="3.html">JavaScript</a></li>
+   </ol>
+   <div id="article">
+     <p>
+       <strong>웹페이지 안에 <u>CSS</u>를 삽입하는법</strong>
+       <br>1. 스타일 태그를 쓴다.
+       <br>2. 스타일 속성을 쓴다.
+     </p>
+     우선순위 : id > class > tag (h1, a 등등)
+     id 선택자와 class 선택자가 같이 선언되어있는 경우
+     id 선택자의 속성이 우선적으로 반영된다.
+     class 선택자는 .클래스명  으로 선언하고
+     id 선택자는 #선택자명 으로 선언해준다.
+     text-decoration: none; 밑줄을 제거하는 CS
+     style="color:black" 에서 style=" 이 부분은 HTML의 속성이다.
+     스타일의 속성 값으론 반드시 CSS가 들어온다.
+     반대로 상단의 style라는 태그는 효과만 있어선 누구에게 지정할지 설명을 할 수 없으므로
+     a{} 라는 코드가 필요하며 이것을 선택자(Selector) 라고 부른다.
+     속성은 property 라고 부르고
+     속성값은 property value 라고 부른다
+     css에 클래스를 선언할땐 앞에 .을 붙여서 위와같이 .클래스명{} 으로 선언한 후
+     안에 속성값을 넣어준다.
+     id 선택자는 두번 이상 쓰지 않는게 좋다. 유일무이한 값이기 때문
+     br태그는 줄바꿈 역할을 한다. 또 닫아줄 필요가 없다.
+     p태그는 문단을 변경할 때 쓴다.
+     ol은 자동으로 넘버링을 해준다.
+     ul은 자식 태그를 가진다.
+     li 태그는 부모 태그를 가진다.
+     html은 전체 html 태그를 감싼다
+     head은 문서를 설명하는 태그들이 하위로 들어간다
+     body는 문서 내용이 들어간다
+     a href="" "" 안의 주소로 이동하는 하이퍼링크를 지정
+     target="_blank" 새 창에서 하이퍼링크를 열게하는 속성
+     title="html5" 창을 열기 전 설명해줄 문구를 쓰는 속성
+     P 태그는 정해진 여백만큼만 벌어지기때문에 시각적으로는
+     br 태그보다 자유도가 떨어진다.
+     이것을 보충하기 위한게 CSS 기술인데 style="margin-top:40px;"
+     이 부분이 css의 일부다
+
+   </div>
+  </div>
+</body>
+</html>
